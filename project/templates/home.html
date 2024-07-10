@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    {% block content %}
+    <center><h1 style="background-color: chartreuse;border: 5px solid black;  border: 1px solid #927575;
+    border-radius: 5px;">WELCPME TO MY HOME PAGE</h1>
+    <div>
+        <img  style="border: 3px solid black;" id="p2" src="{% static 'image/001.jpg' %}" height="200px" width="350px" alt="Priya Roy">
+    <video  style="border: 3px solid black;" width="350px" height="200px" controls>
+        <source src="{% static 'video/video.mp4' %}" type="video/mp4">
+        Your browser dose not support video tag
+    </video>
+    <img  style="border: 3px solid black;" class="image1"  src="{% static 'image/002.jpg' %}" height="200px" width="350px" alt="Priya Roy"><br> 
+    <img  style="border: 3px solid black;" id="p3" src="{% static 'image/003.jpg' %}" height="200px" width="350px" alt="Priya Roy">
+</div>
+</center>
+{% endblock %}
+
+</body>
+</html>
